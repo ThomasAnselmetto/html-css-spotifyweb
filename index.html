@@ -17,13 +17,43 @@
 
 <body>
     <!-- creazione della prima suddivisione verticale tra main-content e footer -->
+
+    <!-- creazione dei blocchi della side-bar e suddivisione dei vari ul-->
+
+
+
     <div class="main-content d-flex">
 
         <div class="side-bar">
-            <div class="logo"></div>
-            <div class="nav"></div>
-            <div class="playlist"></div>
-            <div class="account"></div>
+            <div class="logo">
+                <img src="./img/logo.svg" alt="spotify-logo-large">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cerca</a></li>
+                    <li><a href="#">La tua libreria</a></li>
+                </ul>
+            </div>
+            <div class="playlist">
+                <h4>PLAYLIST</h4>
+                <ul>
+                    <li class="crea"><a href="#">Crea Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <li><a href="#">Installa app</a></li>
+                    <li class="style-account"><a href="#">John Doe</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- dopo aver suddiviso gli spazi verticali,divido side-bar e content e successivamente content-header e content-body -->
@@ -33,7 +63,49 @@
                 <div class="button"><a href="#">EFFETTUA L'UPGRADE</a></div>
             </div>
 
-            <div class="content-body"></div>
+            <!-- aggiungo un container per le row e creo ul con li*6>a per i link dalla nav -->
+            <div class="container">
+                <div class="content-body">
+                    <div class="type-nav">
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
 
         </div>
     </div>

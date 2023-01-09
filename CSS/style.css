@@ -48,32 +48,36 @@ footer {
 /* side-bar */
 
 .side-bar {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     min-width: 230px;
     max-width: 230px;
     background-color: black;
+    color: white;
+    padding: 5px 20px;
 }
 
 .logo {
-    height: 30px;
     background-color: blueviolet;
 }
 
 .nav {
-    height: 30px;
     background-color: blueviolet;
 }
 
 .playlist {
-    height: 30px;
     background-color: blueviolet;
 }
 
 .account {
-    height: 30px;
-    background-color: blueviolet;
+    background-color: violet;
+    margin-top: auto;
 }
 
+.style-account {
+    border-top: 1px solid white;
+}
 
 
 
@@ -107,6 +111,16 @@ footer {
 
 
 /* content-body*/
+
+
+.card {
+    width: 200px;
+    aspect-ratio: 1;
+    background-color: black;
+    border: 1px solid red;
+}
+
+
 
 /* utils */
 
