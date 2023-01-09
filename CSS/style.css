@@ -1,3 +1,7 @@
+body {
+    font-family: 'Figtree', sans-serif;
+}
+
 /* main-content */
 .main-content {
     background-color: rgb(46, 167, 192);
@@ -62,6 +66,10 @@ footer {
     background-color: blueviolet;
 }
 
+.logo>img {
+    max-width: 80%;
+}
+
 .nav {
     background-color: blueviolet;
 }
@@ -111,15 +119,37 @@ footer {
 
 
 /* content-body*/
+.link-list {
+    display: flex;
+    justify-content: space-between;
+}
 
+.link-list>li>a {
+    line-height: 40px;
+    padding: 10px 10px;
+    /* box-shadow: 1px 1px 1px black; */
+}
+
+.row {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-2 {
+    padding-left: -10px;
+    padding-right: -10px;
+}
 
 .card {
-    width: 200px;
-    aspect-ratio: 1;
+    width: 140px;
+    height: 170px;
     background-color: black;
     border: 1px solid red;
 }
 
+.rounded {
+    border-radius: 50%;
+}
 
 
 /* utils */
