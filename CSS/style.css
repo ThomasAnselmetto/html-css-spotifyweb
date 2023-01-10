@@ -1,5 +1,7 @@
 :root {
     --footer-height: 100px;
+    --aside-min-width: 200px;
+    --aside-max-width: 200px;
 }
 
 body {
@@ -15,9 +17,10 @@ body {
 
 h2,
 h3 {
+    margin: 0;
     color: white;
     font-weight: bold;
-    font-size: larger;
+    font-size: 13px;
 }
 
 /* side-bar */
@@ -26,22 +29,22 @@ h3 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: var(--aside-min-width);
+    max-width: var(--aside-max-width);
     background-color: black;
-    color: white;
+    color: #6D6D6D;
     padding: 5px 20px;
+    gap: 1rem;
 }
 
-.logo {}
+#play-list {
+    color: white;
+    margin: 0.5rem 0;
+}
 
 .logo>img {
     max-width: 80%;
 }
-
-.nav {}
-
-.playlist {}
 
 .account {
     background-color: violet;
@@ -52,10 +55,26 @@ h3 {
     border-top: 1px solid white;
 }
 
+.crea {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.plus {
+    color: black;
+    font-size: 35px;
+    padding: 0 11px;
+    text-align: center;
+    background-color: #A3A3A3;
+
+}
 
 /* content */
 .content {
-    width: calc(100% - 300px);
+    width: calc(100% - var(--aside-max-width));
     height: 100%;
     overflow: auto;
 }
@@ -66,7 +85,7 @@ h3 {
 .content-header {
     background-color: rgba(0, 0, 0, 0.5);
     height: 75px;
-    width: calc(100% - 300px);
+    width: calc(100% - var(--aside-max-width));
     display: flex;
     position: fixed;
     justify-content: flex-end;
@@ -81,6 +100,20 @@ h3 {
     height: 100%;
     padding-top: 75px;
 }
+
+.content-body>h2 {
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.card {
+    text-align: center;
+}
+
+.card>div {
+    font-size: 10px;
+}
+
 
 .link-list {
     display: flex;
@@ -112,20 +145,24 @@ footer {
 }
 
 .fa-solid {
-    font-size: 20px
+    font-size: 15px;
 }
 
 /* left-footer */
 .left-footer {
-    width: 300px;
+    width: var(--aside-max-width);
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .left-footer>.song-img {
     max-width: 20%;
 }
 
+.song-name>div {
+    font-size: 8px;
+}
 
 
 /* center-footer  */
@@ -155,7 +192,7 @@ footer {
     justify-content: space-between;
 }
 
-.progress-bar>p {
+.progress-bar>div {
     color: #C8C8C8;
 }
 
@@ -166,6 +203,7 @@ footer {
     background-color: #5C5C5C;
     align-self: center;
     position: relative;
+    margin: 1rem 0;
 }
 
 .progress {
@@ -185,23 +223,52 @@ footer {
     position: absolute;
     top: -2.8px;
     left: 114px;
-
-
 }
 
 .progress-bar:hover .progress {
-    background-color: green;
+    background-color: #ADFF2F;
 }
 
 /* right-footer */
+.right-footer {
+    width: var(--aside-max-width);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
 
+.bar.volume {
+    height: 3px;
+    width: 100%;
+}
 
+.progress-volume {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: #C8C8C8;
+}
 
+.onlyforhover {
+    width: 100%;
+    padding: 0.5rem;
+}
 
+.bar.volume::after {
+    content: "";
+    background-color: #C8C8C8;
+    display: block;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.7px;
+    left: 23px;
+}
 
-
-
-
+.onlyforhover:hover .progress-volume {
+    background-color: #ADFF2F;
+}
 
 
 

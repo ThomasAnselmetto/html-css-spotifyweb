@@ -39,10 +39,13 @@
                     <li><a href="#">La tua libreria</a></li>
                 </ul>
             </div>
+            <!-- creazione della side bar-distanziamento elementi e creazione di un div per il plus -->
             <div class="playlist">
-                <h4>PLAYLIST</h4>
+                <div id="play-list">PLAYLIST</div>
                 <ul>
-                    <li class="crea"><a href="#">Crea Playlist</a></li>
+                    <li class="crea"><a href="#"><span class="plus">+</span></a>
+                        <a href="#">Crea Playlist</a>
+                    </li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
@@ -91,88 +94,90 @@
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
                                 <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <div>Subtitle</div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Stranger Thin, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                <div>Kyle Dixon & Michael Stein</div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>A quiet place</h3>
+                                <div>Subtitle</div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Split</h3>
+                                <div>Subtitle</div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>A cure for wellness</h3>
+                                <div>Subtitle</div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Sinister</h3>
+                                <div>Subtitle</div>
                             </div>
                         </div>
                     </div>
 
                     <h2 class="padding-left-05">Creato per John Doe</h2>
-                    <p class="padding-left-05">Più ascolti, più accurati saranno i suggerimenti </p>
+                    <div class="padding-left-05">Più ascolti, più accurati saranno i suggerimenti
+                    </div>
                     <div class="row">
+
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
-
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Release Radar</h3>
                             </div>
                         </div>
+
                         <div class="col-2">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist">
-
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Daily Mix 1</h3>
                             </div>
                         </div>
                     </div>
 
 
+
+
                     <h2 class="padding-left-05">Artisti più popolari</h2>
-                    <p class="padding-left-05">Più ascolti, più accurati saranno i suggerimenti </p>
+                    <div class="padding-left-05">Più ascolti, più accurati saranno i suggerimenti
+                    </div>
                     <div class="row">
                         <div class="col-2">
                             <div class="card"><img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Young and Beatiful</h3>
+                                <div>Lana del Rey</div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card"><img src="./img/metal_lifting.jpg" alt="metal-playlist">
 
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
+                                <h3>Experience</h3>
+                                <div>Ludovico Einaudi</div>
                             </div>
                         </div>
 
@@ -182,15 +187,7 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
+    <!-- NEL FOOTER ABBIAMO 3 SPAZI DISTINTI SUDDIVISI CON FLEX-BOX CANZONE IN RIPRODUZIONE A SINISTRA BARRA DI RIPRODUZIONE IN CENTRO E VOLUME E ALTRI ELEMENTI DI GESTIONE DELLA RIPRODUZIONE A DESTRA -->
 
     <footer>
         <div class="left-footer d-flex padding-1">
@@ -199,7 +196,7 @@
             </div>
             <div class="song-name padding-1">
                 <h3>Sinister</h3>
-                <p>Brano Nome</p>
+                <div>Brano Nome</div>
             </div>
             <div class="song-like">
                 <i class="fa-regular fa-heart"></i>
@@ -220,22 +217,31 @@
                 <div class="play-icon"><a href="#"><i class="fa-solid fa-rotate-right"></i></a></div>
             </div>
             <div class="progress-bar">
-                <p>0.25</p>
+                <div>0.25</div>
                 <div class="bar">
                     <span class="progress"></span>
                 </div>
-                <p>4.35</p>
+                <div>4.35</div>
             </div>
 
 
         </div>
+
+
         <div class="right-footer">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="onlyforhover">
+                <div class="bar volume">
+                    <span class="progress-volume"></span>
+                </div>
+            </div>
 
         </div>
 
+
     </footer>
-
-
 
 </body>
 
