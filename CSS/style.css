@@ -1,53 +1,24 @@
+:root {
+    --footer-height: 100px;
+}
+
 body {
     font-family: 'Figtree', sans-serif;
+    color: #73757A;
 }
 
 /* main-content */
 .main-content {
-    background-color: rgb(46, 167, 192);
-    height: calc(100vh - 80px);
+    background-color: #141922;
+    height: calc(100vh - var(--footer-height));
 }
 
-
-
-
-
-
-/* footer */
-footer {
-    background-color: rgb(241, 115, 6);
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
+h2,
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
 }
-
-/* left-footer */
-.left-footer {
-    background-color: blueviolet;
-    height: 50px;
-    width: 200px;
-}
-
-
-/* center-footer  */
-.center-footer {
-    background-color: blueviolet;
-    height: 50px;
-    width: 200px;
-}
-
-
-/* right-footer */
-.right-footer {
-    background-color: blueviolet;
-    height: 50px;
-    width: 200px;
-}
-
-
-
-
-
 
 /* side-bar */
 
@@ -55,28 +26,22 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-width: 230px;
-    max-width: 230px;
+    min-width: 300px;
+    max-width: 300px;
     background-color: black;
     color: white;
     padding: 5px 20px;
 }
 
-.logo {
-    background-color: blueviolet;
-}
+.logo {}
 
 .logo>img {
     max-width: 80%;
 }
 
-.nav {
-    background-color: blueviolet;
-}
+.nav {}
 
-.playlist {
-    background-color: blueviolet;
-}
+.playlist {}
 
 .account {
     background-color: violet;
@@ -88,19 +53,12 @@ footer {
 }
 
 
-
-
-
-
-
 /* content */
 .content {
-    width: calc(100% - 230px);
-    background-color: beige;
+    width: calc(100% - 300px);
+    height: 100%;
+    overflow: auto;
 }
-
-
-
 
 
 
@@ -108,60 +66,161 @@ footer {
 .content-header {
     background-color: rgba(0, 0, 0, 0.5);
     height: 75px;
+    width: calc(100% - 300px);
     display: flex;
+    position: fixed;
     justify-content: flex-end;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
-
-
-
-
 /* content-body*/
+.content-body {
+    height: 100%;
+    padding-top: 75px;
+}
+
 .link-list {
     display: flex;
     justify-content: space-between;
 }
 
 .link-list>li>a {
-    line-height: 40px;
+    line-height: 50px;
     padding: 10px 10px;
     /* box-shadow: 1px 1px 1px black; */
 }
 
-.row {
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 .col-2 {
-    padding-left: -10px;
-    padding-right: -10px;
-}
-
-.card {
-    width: 140px;
-    height: 170px;
-    background-color: black;
-    border: 1px solid red;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .rounded {
     border-radius: 50%;
 }
 
+/* footer */
+footer {
+    background-color: #282828;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-solid {
+    font-size: 20px
+}
+
+/* left-footer */
+.left-footer {
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer>.song-img {
+    max-width: 20%;
+}
+
+
+
+/* center-footer  */
+.center-footer {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-buttons {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    margin-top: 1rem;
+    width: 250px;
+}
+
+.fa-circle-play {
+    font-size: 30px;
+}
+
+.progress-bar {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.progress-bar>p {
+    color: #C8C8C8;
+}
+
+.bar {
+    width: 80%;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #5C5C5C;
+    align-self: center;
+    position: relative;
+}
+
+.progress {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: #C8C8C8;
+}
+
+.bar::after {
+    content: "";
+    background-color: #C8C8C8;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.8px;
+    left: 114px;
+
+
+}
+
+.progress-bar:hover .progress {
+    background-color: green;
+}
+
+/* right-footer */
+
+
+
+
+
+
+
+
+
+
+
 
 /* utils */
+.container {
+    max-width: 1170px;
+    padding: 1rem;
+}
 
 .button {
     color: white;
     border: 1px solid white;
     border-radius: 25px;
+    margin-right: 2.5rem;
 
 }
 
 .button>a {
     line-height: 40px;
-    padding: 10px 25px;
+    padding: 10px 35px;
 }
