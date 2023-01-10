@@ -24,6 +24,10 @@
 	justify-content: space-evenly;
 }
 
+.align-items-c {
+	align-items: center;
+}
+
 /* DISPLAYS */
 
 .d-flex {
@@ -44,6 +48,26 @@
 
 .d-none {
 	display: none;
+}
+
+.flex-dir-col {
+	flex-direction: column;
+}
+
+.gap-5 {
+	gap: 5px;
+}
+
+.gap-10 {
+	gap: 10px;
+}
+
+.gap-15 {
+	gap: 15px;
+}
+
+.gap-20 {
+	gap: 20px;
 }
 
 /* CONTAINER & ROW */
