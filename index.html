@@ -32,14 +32,17 @@
 
         <div class="side-bar">
             <div class="logo">
-                <img src="./img/logo.svg" alt="spotify-logo-large">
+                <img class="logo-large" src="./img/logo.svg" alt="spotify-logo-large">
+                <img class="logo-small" src="./img/logo-small.svg" alt="spotify-logo-small/img">
             </div>
             <div class="nav">
                 <ul>
-                    <li><a class="d-flex align-items-c" href="#"><img src="./img/home.svg" alt=""> Home</a></li>
-                    <li><a class="d-flex align-items-c" href="#"><img src="./img/search.svg" alt=""> Cerca</a></li>
-                    <li><a class="d-flex align-items-c" href="#"><img src="./img/libreria.svg" alt=""> La tua
-                            libreria</a></li>
+                    <li class="d-flex nav-logo"><a href="#"><img src="./img/home.svg" alt=""></a> <a class="nav-text"
+                            href="#"> home</a> </li>
+                    <li class="d-flex nav-logo"><a href="#"><img src="./img/search.svg" alt=""></a> <a class="nav-text"
+                            href="#"> cerca</a> </li>
+                    <li class="d-flex nav-logo"><a href="#"><img src="./img/libreria.svg" alt=""></a> <a
+                            class="nav-text" href="#"> La tua libreria</a> </li>
                 </ul>
             </div>
             <!-- creazione della side bar-distanziamento elementi e creazione di un div per il plus -->
@@ -61,10 +64,16 @@
                 </ul>
             </div>
             <div class="account">
-                <ul>
-                    <li><a href="#">Installa app</a></li>
-                    <li class="style-account"><a href="#">John Doe</a></li>
-                </ul>
+
+                <div class="loghino1 d-flex gap-10">
+                    <a class="loghini" href="#"><img src="./img/download.svg" alt=""></a> <a class="scrittini1"
+                        href="#">Installa app</a>
+                </div>
+                <hr class="separatore">
+                <div class="loghino2 d-flex gap-10"><a class="loghini" href="#"><img src="./img/profile.svg" alt=""></a>
+                    <a class="scrittini2" href="#">John
+                        Doe</a>
+                </div>
             </div>
         </div>
 
@@ -174,14 +183,14 @@
                     </div>
                     <div class="row">
                         <div class="col-2 col-lg-3 col-md-6">
-                            <div class="card"><img src="./img/youg.jpeg" alt="youg/img">
+                            <div class="card"><img class="rounded" src="./img/youg.jpeg" alt="youg/img">
 
                                 <h3>Young and Beatiful</h3>
                                 <div>Lana del Rey</div>
                             </div>
                         </div>
                         <div class="col-2 col-lg-3 col-md-6">
-                            <div class="card"><img src="./img/einaudi.jpeg" alt="Lud-Einaudi/img">
+                            <div class="card"><img class="rounded" src="./img/einaudi.jpeg" alt="Lud-Einaudi/img">
 
                                 <h3>Experience</h3>
                                 <div>Ludovico Einaudi</div>
@@ -195,23 +204,26 @@
     </div>
 
     <!-- NEL FOOTER ABBIAMO 3 SPAZI DISTINTI SUDDIVISI CON FLEX-BOX CANZONE IN RIPRODUZIONE A SINISTRA BARRA DI RIPRODUZIONE IN CENTRO E VOLUME E ALTRI ELEMENTI DI GESTIONE DELLA RIPRODUZIONE A DESTRA -->
-
+    <!-- ho cambiato assetto mettendo il div my-music per permettere con flex wrap di incolonnare cuore e folder -->
     <footer>
         <div class="left-footer d-flex padding-1">
             <div class="song-img">
                 <img src="./img/sinister.jpeg" alt="sinister-song">
             </div>
-            <div class="song-name padding-1">
+            <div class="song-name padding-05">
                 <h3>Sinister</h3>
                 <div>Brano Nome</div>
             </div>
-            <div class="song-like">
+            <div class="my-music d-flex">
                 <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="song-archive">
                 <i class="fa-regular fa-folder"></i>
             </div>
         </div>
+
+
+
+
+
 
 
 
@@ -236,9 +248,13 @@
 
 
         <div class="right-footer">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-display"></i>
-            <i class="fa-solid fa-volume-high"></i>
+
+            <div class="volume-logos d-flex">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+
             <div class="onlyforhover">
                 <div class="bar volume">
                     <span class="progress-volume"></span>
