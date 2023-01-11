@@ -364,11 +364,11 @@ footer {
     background-color: white;
 }
 
-.card {
+.img-container {
     position: relative;
 }
 
-.card:hover img {
+.img-container:hover img {
     filter: opacity(0.4);
 }
 
@@ -376,11 +376,11 @@ footer {
     display: none;
 }
 
-.card:hover .layover {
+.img-container:hover .layover {
     display: block;
     color: white;
     position: absolute;
-    top: 38%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
