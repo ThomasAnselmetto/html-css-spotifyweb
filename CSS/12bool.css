@@ -365,7 +365,7 @@
 
 /* LARGE DEVICES - lg */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
 
 	/* DISPLAYS */
 
@@ -506,7 +506,7 @@
 
 /* MEDIUM DEVICES - md */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
 
 	/* DISPLAYS */
 
