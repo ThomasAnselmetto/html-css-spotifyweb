@@ -368,7 +368,7 @@ footer {
     position: relative;
 }
 
-.img-container:hover img {
+.card:hover img {
     filter: opacity(0.4);
 }
 
@@ -376,7 +376,7 @@ footer {
     display: none;
 }
 
-.img-container:hover .layover {
+.card:hover .layover {
     display: block;
     color: white;
     position: absolute;
