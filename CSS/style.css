@@ -408,7 +408,13 @@ footer {
     cursor: pointer;
 }
 
+.progress-bar:hover {
+    cursor: pointer;
+}
 
+.onlyforhover:hover {
+    cursor: pointer;
+}
 
 /* ************* */
 /* media query */
