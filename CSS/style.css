@@ -560,7 +560,7 @@ footer {
 
 @media screen and (max-height: 580px) {
     .new-playlist {
-        height: 90px;
+        height: 80px;
     }
 
     .account {
