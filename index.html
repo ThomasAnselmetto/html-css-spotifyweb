@@ -26,19 +26,26 @@
 
     <!-- creazione dei blocchi della side-bar e suddivisione dei vari ul-->
 
-
+    <!-- assegno a tutti gli elementi che devono diventare bianchi con l'hover una classe become-white -->
 
     <div class="main-content d-flex">
-
+        <!-- aggiungo scrollbars per schermo ridotto in altezza -->
         <div class="side-bar">
+
             <div class="logo">
                 <img class="logo-large" src="./img/logo.svg" alt="spotify-logo-large">
                 <img class="logo-small" src="./img/logo-small.svg" alt="spotify-logo-small/img">
             </div>
+
             <div class="nav">
                 <ul>
-                    <li class="d-flex nav-logo"><a href="#"><img src="./img/home.svg" alt=""></a>
-                        <a class="nav-text become-white" href="#"> home</a>
+                    <li class="d-flex nav-logo"><a
+                            href="https://www.spotify.com/it/premium/?utm_source=it-it_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_emea_it_premiumbusiness_core_brand+contextual-desktop+text+exact+it-it+google&gclid=CjwKCAiA2fmdBhBpEiwA4CcHzeDWeyVb0-EYbu8tOrHJh_hIKZQe4t0YtaAq7nJwTJa0dWz009fvdhoC3g0QAvD_BwE&gclsrc=aw.ds"><img
+                                src="./img/home.svg" alt=""></a>
+
+                        <a class="nav-text become-white"
+                            href="https://www.spotify.com/it/premium/?utm_source=it-it_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_emea_it_premiumbusiness_core_brand+contextual-desktop+text+exact+it-it+google&gclid=CjwKCAiA2fmdBhBpEiwA4CcHzeDWeyVb0-EYbu8tOrHJh_hIKZQe4t0YtaAq7nJwTJa0dWz009fvdhoC3g0QAvD_BwE&gclsrc=aw.ds">
+                            home</a>
                     </li>
 
                     <li class="d-flex nav-logo"><a href="#"><img src="./img/search.svg" alt=""></a>
@@ -50,7 +57,9 @@
                     </li>
                 </ul>
             </div>
+
             <!-- creazione della side bar-distanziamento elementi e creazione di un div per il plus -->
+
             <div class="playlist">
 
                 <div id="play-list">PLAYLIST</div>
@@ -59,28 +68,30 @@
                     <li class="crea"><a href="#"><span class="plus bg-white">+</span></a>
                         <a class="become-white" href="#">Crea Playlist</a>
                     </li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
+                    <li><a class="become-white" href="#">Nome Playlist</a></li>
                 </ul>
             </div>
-            <div class="account">
 
+            <div class="account">
                 <div class="loghino1 d-flex gap-10">
-                    <a class="loghini" href="#"><img src="./img/download.svg" alt=""></a> <a class="scrittini1"
-                        href="#">Installa app</a>
+                    <a class="loghini" href="#"><img src="./img/download.svg" alt=""></a> <a
+                        class="scrittini1 become-white" href="#">Installa app</a>
                 </div>
                 <hr class="separatore">
                 <div class="loghino2 d-flex gap-10"><a class="loghini" href="#"><img src="./img/profile.svg" alt=""></a>
-                    <a class="scrittini2" href="#">John
+                    <a class="scrittini2 become-white" href="#">John
                         Doe</a>
                 </div>
             </div>
+
         </div>
+
 
         <!-- dopo aver suddiviso gli spazi verticali,divido side-bar e content e successivamente content-header e content-body -->
         <div class="content">
@@ -94,20 +105,21 @@
                 <div class="content-body">
                     <div class="type-nav d-flex jc-center ">
                         <ul class="link-list">
-                            <li><a class="" href="#">IN EVIDENZA</a></li>
-                            <li><a class="" href="#">PODCAST</a></li>
-                            <li><a class="" href="#">CLASSIFICHE</a></li>
-                            <li><a class="" href="#">GENERI E MOOD</a></li>
-                            <li><a class="" href="#">NUOVE USCITE</a></li>
-                            <li><a class="" href="#">SCOPRI</a></li>
+                            <li><a class="become-white" href="#">IN EVIDENZA</a></li>
+                            <li><a class="become-white" href="#">PODCAST</a></li>
+                            <li><a class="become-white" href="#">CLASSIFICHE</a></li>
+                            <li><a class="become-white" href="#">GENERI E MOOD</a></li>
+                            <li><a class="become-white" href="#">NUOVE USCITE</a></li>
+                            <li><a class="become-white" href="#">SCOPRI</a></li>
                         </ul>
                     </div>
 
 
-                    <!-- inserisco i titoli delle playlist e le row -->
+                    <!-- inserisco i titoli delle playlist e le row con dentro col e cards le colonne poi passeranno da col2 a col3 e poi a col6 attraverso i vari breakpoints-->
                     <h2 class="padding-left-05">Recently Played</h2>
 
                     <div class="row">
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="./img/metal_lifting.jpg" alt="metal-playlist/img">
@@ -116,6 +128,7 @@
                                 <div>Subtitle</div>
                             </div>
                         </div>
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="./img/stranger.jpeg" alt="stranger-th/img">
@@ -124,6 +137,7 @@
                                 <div>Kyle Dixon & Michael Stein</div>
                             </div>
                         </div>
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="./img/aquietplace.jpeg" alt="aquietplace/img">
@@ -132,6 +146,7 @@
                                 <div>Subtitle</div>
                             </div>
                         </div>
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="./img/split.jpeg" alt="split/img">
@@ -140,6 +155,7 @@
                                 <div>Subtitle</div>
                             </div>
                         </div>
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="./img/cure.jpeg" alt="cure/img">
@@ -148,6 +164,7 @@
                                 <div>Subtitle</div>
                             </div>
                         </div>
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card">
                                 <img src="./img/sinister.jpeg" alt="sinister/img">
@@ -156,12 +173,15 @@
                                 <div>Subtitle</div>
                             </div>
                         </div>
+
                     </div>
 
                     <h2 class="padding-left-05">Creato per John Doe</h2>
+
                     <div class="ascolti padding-left-05 margin-bottom-15">Più ascolti, più accurati saranno i
                         suggerimenti
                     </div>
+
                     <div class="row">
 
                         <div class="col-2 col-lg-3 col-md-6">
@@ -179,16 +199,17 @@
                                 <h3>Daily Mix 1</h3>
                             </div>
                         </div>
+
                     </div>
 
-
-
-
                     <h2 class="padding-left-05">Artisti più popolari</h2>
+
                     <div class="ascolti padding-left-05 margin-bottom-15">Più ascolti, più accurati saranno i
                         suggerimenti
                     </div>
+
                     <div class="row">
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card"><img class="rounded" src="./img/youg.jpeg" alt="youg/img">
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
@@ -197,6 +218,7 @@
                                 <div>Lana del Rey</div>
                             </div>
                         </div>
+
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card"><img class="rounded" src="./img/einaudi.jpeg" alt="Lud-Einaudi/img">
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
@@ -207,35 +229,36 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- NEL FOOTER ABBIAMO 3 SPAZI DISTINTI SUDDIVISI CON FLEX-BOX CANZONE IN RIPRODUZIONE A SINISTRA BARRA DI RIPRODUZIONE IN CENTRO E VOLUME E ALTRI ELEMENTI DI GESTIONE DELLA RIPRODUZIONE A DESTRA -->
+    <!-- NEL FOOTER ABBIAMO 3 SPAZI DISTINTI SUDDIVISI CON FLEX-BOX (CANZONE IN RIPRODUZIONE A SINISTRA,BARRA DI RIPRODUZIONE IN CENTRO E VOLUME E ALTRI ELEMENTI DI GESTIONE DELLA RIPRODUZIONE A DESTRA) -->
     <!-- ho cambiato assetto mettendo il div my-music per permettere con flex wrap di incolonnare cuore e folder -->
     <footer>
+
         <div class="left-footer d-flex padding-1">
+
             <div class="song-img">
-                <img src="./img/sinister.jpeg" alt="sinister-song">
+                <img class="scale" src="./img/sinister.jpeg" alt="sinister-song">
             </div>
+
             <div class="song-name padding-05">
                 <h3>Sinister</h3>
                 <div>Brano Nome</div>
             </div>
+
             <div class="my-music d-flex">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart become-white"></i>
+                <i class="fa-regular fa-folder become-white"></i>
             </div>
+
         </div>
 
 
-
-
-
-
-
-
         <div class="center-footer">
+
             <div class="song-buttons">
                 <div class="play-icon"><a href="#"><i class="fa-solid fa-shuffle"></i></a></div>
                 <div class="play-icon"><a href="#"><i class="fa-solid fa-square-caret-left"></i></a></div>
@@ -243,24 +266,24 @@
                 <div class="play-icon"><a href="#"><i class="fa-solid fa-square-caret-right"></i></a></div>
                 <div class="play-icon"><a href="#"><i class="fa-solid fa-rotate-right"></i></a></div>
             </div>
+
             <div class="progress-bar">
-                <div>0.25</div>
+                <div class="scale">0.25</div>
                 <div class="bar">
                     <span class="progress"></span>
                 </div>
-                <div>4.35</div>
+                <div class="scale">4.35</div>
             </div>
+
         </div>
-
-
 
 
         <div class="right-footer">
 
             <div class="volume-logos d-flex">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-bars become-white"></i>
+                <i class="fa-solid fa-display become-white"></i>
+                <i class="fa-solid fa-volume-high become-white"></i>
             </div>
 
             <div class="onlyforhover">
@@ -270,7 +293,6 @@
             </div>
 
         </div>
-
 
     </footer>
 

@@ -88,6 +88,7 @@ h3 {
 
 .new-playlist {
     min-height: 155px;
+    overflow: auto;
 }
 
 .loghino1 {
@@ -285,10 +286,6 @@ footer {
     left: 114px;
 }
 
-.progress-bar:hover .progress {
-    background-color: #ADFF2F;
-}
-
 /* right-footer */
 .right-footer {
     width: var(--aside-max-width);
@@ -399,6 +396,22 @@ footer {
     transform: scale(1.2);
 
 }
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.progress-bar:hover .progress {
+    background-color: #ADFF2F;
+}
+
+.progress-bar:hover .scale {
+    transform: scale(1.5);
+}
+
+
+
+
 
 /* ************* */
 /* media query */
@@ -522,8 +535,22 @@ footer {
         width: 50px;
 
     }
+}
 
+@media screen and (max-height: 690px) {
+    .new-playlist {
+        height: 150px;
+        overflow: auto;
+        width: 150px;
+    }
 
+}
 
-
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.8em;
+    background: #ADFF2F;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px black;
 }
