@@ -360,6 +360,10 @@ footer {
     color: white;
 }
 
+.become-white.border-green:hover {
+    border-bottom: 2px solid #ADFF2F;
+}
+
 .bg-white:hover {
     background-color: white;
 }
