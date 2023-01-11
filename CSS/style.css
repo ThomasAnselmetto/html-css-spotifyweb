@@ -310,7 +310,7 @@ footer {
 }
 
 .volume-logos {
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
@@ -361,6 +361,48 @@ footer {
 }
 
 
+/* ************* */
+/* hovers */
+/* **************** */
+.become-white:hover {
+    color: white;
+}
+
+.bg-white:hover {
+    background-color: white;
+}
+
+.card {
+    position: relative;
+}
+
+.card:hover img {
+    filter: opacity(0.4);
+}
+
+.layover {
+    display: none;
+}
+
+.card:hover .layover {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button:hover {
+    transform: scale(1.2);
+
+}
+
+/* ************* */
+/* media query */
+/* ***************** */
 @media screen and (max-width: 992px) {
     .progress-bar {
         width: 350px;
@@ -389,10 +431,23 @@ footer {
         width: 250px;
     }
 
+    .song-buttons {
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .right-footer {
+        width: 115px;
+    }
+
+    .volume-logos {
+        flex-wrap: wrap;
+    }
+
     .bar::after {
         position: absolute;
         top: -2.7px;
-        left: 60px;
+        left: 50px;
     }
 }
 
@@ -460,6 +515,15 @@ footer {
     }
 
     .right-footer {
-        width: 120px;
+        width: 90px;
     }
+
+    .bar.volume {
+        width: 50px;
+
+    }
+
+
+
+
 }
